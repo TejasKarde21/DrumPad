@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@300&family=Lato:wght@400;700&family=League+Spartan:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <h1 class="head">The Drum Kit</h1>
+    <div class="imagess">
+        <div class="main" onclick="playMyAudio('sounds/first.mp3')"><img src="images/download (1).jpeg" alt=""><span>w</span></div>
+        <div class="main" onclick="playMyAudio('sounds/sec.mp3')"><img src="images/download (1).jpeg" alt=""><span>a</span></div>
+        <div class="main" onclick="playMyAudio('sounds/drum.mp3')"><img src="images/images34.jpeg" alt=""><span>s</span></div>
+        <div class="main" onclick="playMyAudio('sounds/hear.mp3')"><img src="images/images34.jpeg" alt=""><span>d</span></div>
+        <div class="main" onclick="playMyAudio('sounds/full.mp3')"><img src="images/images6.png" alt=""><span>j</span></div>
+        <div class="main" onclick="playMyAudio('sounds/thali.mp3')"><img src="images/images2.jpeg" alt=""><span>k</span></div>
+        <div class="main" onclick="playMyAudio('sounds/clap.mp3')"><img src="images/images.jpeg" alt=""><span>l</span></div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="" type="audio/mpeg">
+    
+    </audio>
+
+    <script>
+        function playMyAudio(audioSrc) {
+            var audioElement = document.getElementById("myAudio");
+            audioElement.src = audioSrc;
+            audioElement.play();
+        }
+    </script>
+</body>
+</html>
